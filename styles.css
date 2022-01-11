@@ -2,13 +2,65 @@
 
 body {
 width: 100%;
-margin: auto;
+margin: auto
 }
 
 
+.header1 {
+    font-family: 'Assistant', sans-serif;
+    font-weight: 800;
+    background-color: #2F3846;
+    color: white;
+    text-align: center;
+    margin-top: auto;
+    padding: 20px; 
+}
 
+.header2 {
+    color: #2F3846;
+    text-align: center;
+}
 
+.intro-text {
+    font-family: 'Assistant', sans-serif;
+    font-weight: 400;
+    text-align: center;
+    margin-top: -10px;
+    border: 5px #2F3846;
+    border-bottom-style: groove;
+    border-collapse: separate;
+    padding-bottom: 20px;
+}
 
-@media screen {min-width: 760px;
+fieldset {
+    border: none;
+}
+
+.form1 {
+    font-family: 'Assistant', sans-serif;
+    font-weight: 700;
+    font-size: larger;
+    
+}
+
+.border2 {
+    border-top: 3px solid #2F3846;
+    margin-top: -13px;
+}
+
+label {
+    font-family: 'Assistant', sans-serif;
+    display: block;
+    margin-top: 8px;
+}
+
+input {
+    display: inline-block;
+    margin: 0 4px 8px 0;
+    padding: 15px 100px 15px 15px;
+}
+
+@media screen {min-width: 768px); {
+
     
 }
