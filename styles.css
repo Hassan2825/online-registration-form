@@ -3,9 +3,9 @@
 }
 
 main {
-  margin: auto;
-  min-width: 320px;
-  max-width: 768px;
+    margin: auto;
+    min-width: 320px;
+    max-width: 800px;
 } 
 
 .header1 {
@@ -17,8 +17,6 @@ main {
     padding: 20px;  
     margin: -8px;
     min-width: 320px;
-    
-    
 }
 
 .header2 {
@@ -107,6 +105,7 @@ select {
 .main2 {
     margin-top: 35px;
     border: none;
+    background-color: #2F3846;
 }
 
 .border1 {
@@ -120,8 +119,8 @@ select {
     font-family: 'Assistant', sans-serif;
     font-weight: 700;
     font-size: larger;
-    color: #2F3846;
-    margin-top: -50px;
+    color: rgb(138, 151, 160);
+    padding-top: 45px;
 }
 
 .intro-text2 {
@@ -176,7 +175,7 @@ button {
 
 input:focus, textarea:focus {
     border-radius: 5px;
-    outline: 2px solid #2F3846;;
+    outline: 2px solid #2F3846;
 }
 
 
@@ -187,18 +186,7 @@ input:focus, textarea:focus {
     .header1 {
         margin-bottom: 50px;
     }
-    
-    
-    label {
-        color: #152033;
-    }
-
-    .intro-text2 {
-        color: #152033;
-    }
-
-    .header3 {
-        color: #152033;
+    .main1 label {
+        color: #2F3846;
     }
 }
-
