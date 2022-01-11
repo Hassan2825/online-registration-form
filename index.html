@@ -15,12 +15,13 @@
     <header>
         <h3 class="header2">Signup for our newsletter</h3>
         <p class="intro-text">Get the latest news on how your code is doing right in your inbox</p>
+        <p class="border0"></p>
         <p class="border2"></p>
     </header>
     <form action="index.html" method="post" id="box">
-        <fieldset>
+        <fieldset class="main1">
             <legend class="form1">Contact Information</legend><br>
-            <label for="name">Full Name</label><br>
+            <label for="name" class="fullname">Full Name</label><br>
             <input type="text" id="name" name="user_name" placeholder="Required"><br>
 
             <label for="email">Email</label><br>
@@ -41,26 +42,29 @@
             </select><br>
 
             <label for="zip">Zip Code</label><br>
-            <input type="text" id="zip" name="user_zip"><br>
+            <input type="text" id="zip" name="user_zip" class="zip"><br>
         </fieldset>
-        <fieldset>
-            <legend>Newsletter</legend>
-            <p>Select the newsletters you would like to receive</p><br>
+            
+        <p class="border1"></p>
+
+        <fieldset class="main2">
+            <legend class="newsheader">Newsletter</legend>
+            <p class="intro-text2">Select the newsletters you would like to receive</p><br>
             <input type="checkbox" id="htmlnews" value="user_htmlnews" name="news"><label for="htmlnews">HTML News</label><br>
             <input type="checkbox" id="cssnews" value="user_cssnews" name="news"><label for="cssnews">CSS News</label><br>
             <input type="checkbox" id="javanews" value="user_javanews" name="news"><label for="javanews">Javascript News</label>
 
-            <p>Newsletter format</p>
+            <p class="header3">Newsletter format</p>
 
             <input type="radio" id="htmlformat" value="user_htmlformat" name="format"><label for="htmlformat">HTML</label><br>
             <input type="radio" id="plainformat" value="user_plainformat" name="format"><label for="plainformat">Plain Text</label><br>
 
-            <label for="comment">Other topics you'd like to hear about</label><br>
+            <label for="comment" id="intro-text3">Other topics you'd like to hear about</label><br>
             <textarea id="comment" name="user_comment"></textarea><br>
 
             <button type="submit">Sign Up</button><br>
         </fieldset>
-            <p>Copyright! The Code Review</p>
+            <p class="copyright">Copyright! The Code Review</p>
     </form>
 </body>
 </html>
