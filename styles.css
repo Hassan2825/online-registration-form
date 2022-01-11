@@ -1,0 +1,14 @@
+/* ---- MEDIA  ---- */
+
+body {
+width: 100%;
+margin: auto;
+}
+
+
+
+
+
+@media screen {min-width: 760px;
+    
+}
