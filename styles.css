@@ -62,7 +62,7 @@ main {
 
 label {
     font-family: 'Assistant', sans-serif;
-    /* display: inline-block; */
+    display: inline-block; 
     margin-top: 8px;
     color: rgb(138, 151, 160);
 } 
@@ -75,12 +75,10 @@ label {
 }
 
 .main1 input {
-    /* display: block; */
     background-color: #e8e8e8;
     border: none;
     padding: 15px;
     width: 100%;
-    
 }
 
 .main1 {
@@ -96,11 +94,11 @@ select {
     border: none;
     width: 100%;
     padding: 15px;  
-
 } 
 
 .main1 .zip {
     width: 50%;
+    border-radius: 5px;
 }
 
 .main2 {
@@ -174,9 +172,16 @@ button {
     font-style: italic;
 }
 
-input:focus, textarea:focus {
+input:focus, textarea:focus, select:focus {
     border-radius: 5px;
-    outline: 2px solid #2F3846;
+    outline: 3px solid #2F3846;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="tel"]:focus {
+    width: 75%;
+    transition: width .35s ease-in-out;
 }
 
 
@@ -184,29 +189,33 @@ input:focus, textarea:focus {
 
 @media screen and (min-width: 768px) {
 
-    .main1 div {
-        
+    .input1 {
         display: flex;
-        flex-wrap: nowrap;
         flex-direction: row;
-        align-items: baseline;
-
+        border-radius: 20px;
+        margin-top: 20px;
     }
 
-   .main1 label {
-        color: #2F3846;
-        
+    .input1 label {
+        min-width: 20%;
+        color: #0d387e;
     }
 
-   
-
-
-    .header1 {
-        margin-bottom: 50px;
+    .main1 input {
+        padding: 18px;
+        border-radius: 7px;
     }
 
     #zip {
         width: 25%;
-    } 
+    }
+
+    header {
+        margin-top: 70px;
+    }
+
+    .header2 {
+        font-size: x-large;
+    }
 
 }
