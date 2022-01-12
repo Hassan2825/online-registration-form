@@ -62,7 +62,7 @@ main {
 
 label {
     font-family: 'Assistant', sans-serif;
-    display: inline-block;
+    /* display: inline-block; */
     margin-top: 8px;
     color: rgb(138, 151, 160);
 } 
@@ -75,11 +75,12 @@ label {
 }
 
 .main1 input {
-    display: inline-block;
+    /* display: block; */
     background-color: #e8e8e8;
     border: none;
     padding: 15px;
     width: 100%;
+    
 }
 
 .main1 {
@@ -93,10 +94,10 @@ select {
     background-color: #e8e8e8;
     border-radius: 5px;
     border: none;
-    display: inline-block;
     width: 100%;
     padding: 15px;  
-}
+
+} 
 
 .main1 .zip {
     width: 50%;
@@ -183,10 +184,29 @@ input:focus, textarea:focus {
 
 @media screen and (min-width: 768px) {
 
+    .main1 div {
+        
+        display: flex;
+        flex-wrap: nowrap;
+        flex-direction: row;
+        align-items: baseline;
+
+    }
+
+   .main1 label {
+        color: #2F3846;
+        
+    }
+
+   
+
+
     .header1 {
         margin-bottom: 50px;
     }
-    .main1 label {
-        color: #2F3846;
-    }
+
+    #zip {
+        width: 25%;
+    } 
+
 }
